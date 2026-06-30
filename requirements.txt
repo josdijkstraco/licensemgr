@@ -1,0 +1,9 @@
+# Runtime dependencies for the License Manager.
+#
+# Ed25519 key generation, signing, and verification are provided entirely by
+# the `cryptography` package — it is the only third-party dependency. Everything
+# else used by licensemgr.py / licensecli.py is in the Python standard library.
+#
+# Tested with cryptography 49.0.0 on Python 3.13. The floor below is a modern,
+# actively maintained release; Ed25519 support itself has existed since 2.6.
+cryptography>=42.0.0
